@@ -1,0 +1,38 @@
+<div class="sidebar" [class.collapsed]="!isSidebarOpen">
+  <!-- Sidebar Toggle -->
+  <button class="toggle-button" (click)="toggleSidebar()">
+    <mat-icon *ngIf="isSidebarOpen">close</mat-icon>
+    <mat-icon *ngIf="!isSidebarOpen">menu</mat-icon>
+  </button>
+
+  <!-- Sidebar Content -->
+  <div class="sidebar-content">
+    <a routerLink="/" class="sidebar-logo">miindful.me</a>
+    <ul class="sidebar-links">
+      <li>
+        <a routerLink="/resources" routerLinkActive="active">
+          <mat-icon>folder</mat-icon>
+          <span class="link-text">Resources</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/forum" routerLinkActive="active">
+          <mat-icon>forum</mat-icon>
+          <span class="link-text">Forum</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/support" routerLinkActive="active">
+          <mat-icon>help</mat-icon>
+          <span class="link-text">Support</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/shop" routerLinkActive="active">
+          <mat-icon>shopping_cart</mat-icon>
+          <span class="link-text">Shop</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
