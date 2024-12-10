@@ -12,7 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     CommonModule,
     RouterModule,
-    LoadingComponent, // Include LoadingComponent
+    LoadingComponent,
     NavbarComponent
   ]
 })
@@ -20,8 +20,9 @@ export class AppComponent implements OnInit {
   isLoading = true;
 
   ngOnInit(): void {
+    // Adjust the delay to control the loading screen duration
     setTimeout(() => {
       this.isLoading = false;
-    }, 2000); // Adjust the delay as needed
+    }, 5000); // Display loading screen for 5 seconds
   }
 }

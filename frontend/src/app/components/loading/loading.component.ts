@@ -6,8 +6,6 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './loading.component.html',
   styleUrls: ['./loading.component.scss'],
-  imports: [CommonModule] // Import CommonModule for *ngIf
+  imports: [CommonModule]
 })
-export class LoadingComponent {
-  isLoading = true;
-}
+export class LoadingComponent {}

@@ -1,15 +1,11 @@
 import { Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { ForumComponent } from './forum/forum.component';
-import { SupportComponent } from './support/support.component';
-import { ShopComponent } from './shop/shop.component';
+import { Article1Component } from './article1/article1.component';
+import { Article2Component } from './article2/article2.component';
 
 export const routes: Routes = [
   { path: '', component: LandingPageComponent }, // Default route
-  { path: 'resources', component: ResourcesComponent },
-  { path: 'forum', component: ForumComponent },
-  { path: 'support', component: SupportComponent },
-  { path: 'shop', component: ShopComponent },
+  { path: 'article1', component: Article1Component },
+  { path: 'article2', component: Article2Component },
   { path: '**', redirectTo: '' } // Fallback route
 ];
