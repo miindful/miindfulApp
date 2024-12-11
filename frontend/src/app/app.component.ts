@@ -23,6 +23,6 @@ export class AppComponent implements OnInit {
     // Adjust the delay to control the loading screen duration
     setTimeout(() => {
       this.isLoading = false;
-    }, 5000); // Display loading screen for 5 seconds
+    }, 2450); // Display loading screen for 5 seconds
   }
 }
