@@ -5,12 +5,13 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f5f5f5;
+html, body {
+  height: 100%; /* Ensures the background color/gradient covers the entire viewport */
+  margin: 0; /* Removes default margin that may cause issues */
+  background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc); /* Match your landing page background */
+  background-color: #f0e7ff; /* Fallback color */
 }
+
 
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
@@ -46,7 +47,8 @@ a:hover {
 
 /* Background for pages */
 .landing {
-  background-color: #f5f5f5;
+  background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc); /* Gradient: pale purple to blue */
+  background-color: #f0e7ff; /* Fallback for older browsers */
 }
 
 .resources {

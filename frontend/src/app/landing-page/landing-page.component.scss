@@ -15,10 +15,12 @@
       flex: 1 1 calc(25% - 20px);
       max-width: calc(25% - 20px);
       background: #fff;
-      border-radius: 8px;
+      border-radius: 12px; /* Softer edges */
       overflow: hidden;
       text-align: center;
       position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 
       .image-timed-transition {
         position: relative;
@@ -58,7 +60,8 @@
       }
 
       &:hover {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.12); /* Enhanced shadow */
       }
     }
   }
